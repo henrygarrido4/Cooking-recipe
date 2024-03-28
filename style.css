@@ -1,0 +1,37 @@
+:root {
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100dvh;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
