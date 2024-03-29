@@ -54,6 +54,8 @@ svg {
   display: block;
 }
 
+/* Custom Properties */
+
 h1,
 h2 {
   font-family: var(--ff-young-serif);
@@ -66,6 +68,8 @@ span {
   font-weight: var(--fw-outfit-600);
 }
 
+/* Grid and image */
+
 .grid_container {
   display: grid;
   max-width: 756px;
@@ -75,7 +79,7 @@ span {
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 1.5rem;
-  row-gap: 20px;
+  row-gap: 40px;
 }
 
 .grid_items {
@@ -85,7 +89,85 @@ span {
 
 .img_container img {
   border-radius: 0.75rem;
-  margin-bottom: 40px;
+}
+
+/* Preperation Time */
+
+.preperation_time {
+  padding: 28px;
+}
+
+.preperation_time h3 {
+  padding-bottom: 1rem;
+}
+
+.preperation_time ul {
+  padding-inline-start: 10px;
+  line-height: 2rem;
+}
+
+.preperation_time ul li::before {
+  content: ""; /* Create a pseudo-element */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 4px; /* Set width of the pseudo-element */
+  height: 4px; /* Set height of the pseudo-element */
+  background-color: var(
+    --dark-raspberry
+  ); /* Set background color of the pseudo-element */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 20px; /* Add margin between the circle and text */
+}
+
+/* Ingredients */
+
+.ingredients ul {
+  padding-inline-start: 0;
+  line-height: 2rem;
+}
+
+.ingredients ul li::before {
+  content: ""; /* Create a pseudo-element */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 4px; /* Set width of the pseudo-element */
+  height: 4px; /* Set height of the pseudo-element */
+  background-color: var(
+    --dark-raspberry
+  ); /* Set background color of the pseudo-element */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 30px; /* Add margin between the circle and text */
+}
+
+.float li {
+  padding-right: 3rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid black;
+}
+
+.float {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom_ol ol {
+  padding-inline-start: 0;
+  line-height: 1.5rem;
+  counter-reset: item;
+}
+
+.custom_ol ol li {
+  counter-increment: item;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.custom_ol ol li::before {
+  margin-right: 1.3rem;
+  content: counter(item);
+  background: #fff;
+  color: var(--dark-raspberry);
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
 }
 
 /* Utility Classes */
@@ -118,6 +200,18 @@ span {
   color: var(--dark-charcoal);
 }
 
-.grid_item {
-  gap: 32px;
+.bottom_margin {
+  margin-bottom: 1px solid var(--dark-raspberry);
+}
+
+.margin_bottom {
+  margin-bottom: 1.5rem;
+}
+
+.top_padding {
+  padding-top: 2rem;
+}
+
+.top_border {
+  border-top: 1px solid var(--eggshell);
 }

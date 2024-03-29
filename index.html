@@ -25,8 +25,8 @@
       </div>
 
       <main class="grid_items">
-        <div class="grid_item">
-          <h1 class="dark_Charcoal">Simple Omelette Recipe</h1>
+        <div>
+          <h1 class="dark_Charcoal | margin_bottom">Simple Omelette Recipe</h1>
 
           <p>
             An easy and quick dish, perfect for any meal. This classic omelette
@@ -35,18 +35,18 @@
           </p>
         </div>
 
-        <div class="grid_item">
+        <div class="preperation_time grid_item">
           <h3 class="dark_Raspberry">Preparation time</h3>
-          <ul>
+          <ul role="list">
             <li><span>Total:</span> Approximately 10 minutes</li>
             <li><span>Preparation:</span> 5 minutes</li>
             <li><span>Cooking:</span> 5 minutes</li>
           </ul>
         </div>
 
-        <div class="grid_item">
-          <h2 class="nutmeg">Ingredients</h2>
-          <ul>
+        <div class="grid_item border-bottom ingredients">
+          <h2 class="nutmeg | margin_bottom top_padding">Ingredients</h2>
+          <ul role="list">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
@@ -57,9 +57,11 @@
           </ul>
         </div>
 
-        <div class="grid_item">
-          <h2 class="nutmeg">Instructions</h2>
-          <ol>
+        <div class="custom_ol">
+          <h2 class="nutmeg | margin_bottom top_padding top_border">
+            Instructions
+          </h2>
+          <ol role="list">
             <li>
               <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch
               of salt and pepper until they are well mixed. You can add a
@@ -96,25 +98,32 @@
           </ol>
         </div>
 
-        <div class="grid_item">
-          <h2 class="nutmeg">Nutrition</h2>
+        <div>
+          <h2 class="nutmeg | margin_bottom top_padding top_border">
+            Nutrition
+          </h2>
 
-          <p>
+          <p class="| margin_bottom">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <ul>
-            <li>Calories</li>
-            <li>277kcal</li>
-
-            <li>Carbs</li>
-            <li>0g</li>
-
-            <li>Protein</li>
-            <li>20g</li>
-
-            <li>Fat</li>
-            <li>22g</li>
+          <ul role="list" class="nutrition">
+            <div class="float">
+              <li>Calories</li>
+              <li>277kcal</li>
+            </div>
+            <div class="float">
+              <li>Carbs</li>
+              <li>0g</li>
+            </div>
+            <div class="float">
+              <li>Protein</li>
+              <li>20g</li>
+            </div>
+            <div class="float">
+              <li>Fat</li>
+              <li>22g</li>
+            </div>
           </ul>
         </div>
       </main>
