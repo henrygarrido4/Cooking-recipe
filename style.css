@@ -82,6 +82,12 @@ span {
   row-gap: 40px;
 }
 
+@media (max-width: 50rem) {
+  .grid_container {
+    padding: 2rem;
+  }
+}
+
 .grid_items {
   display: grid;
   gap: 32px;
@@ -94,6 +100,8 @@ span {
 /* Preperation Time */
 
 .preperation_time {
+  border-radius: 12px;
+  background-color: var(--rose_white);
   padding: 28px;
 }
 
@@ -121,7 +129,7 @@ span {
 /* Ingredients */
 
 .ingredients ul {
-  padding-inline-start: 0;
+  padding-inline-start: 5px;
   line-height: 2rem;
 }
 
@@ -137,37 +145,57 @@ span {
   margin-right: 30px; /* Add margin between the circle and text */
 }
 
-.float li {
-  padding-right: 3rem;
-  padding-bottom: 12px;
-  border-bottom: 1px solid black;
-}
-
-.float {
-  display: flex;
-  justify-content: space-between;
-}
-
 .custom_ol ol {
-  padding-inline-start: 0;
+  padding-inline: 1.1rem;
+  padding-inline-start: 20px;
   line-height: 1.5rem;
   counter-reset: item;
 }
 
 .custom_ol ol li {
-  counter-increment: item;
-  margin-bottom: 10px;
-  display: block;
+  list-style-type: decimal;
+  padding-inline-start: 20px;
 }
 
-.custom_ol ol li::before {
-  margin-right: 1.3rem;
-  content: counter(item);
-  background: #fff;
+.custom_ol ol > li:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+
+.custom_ol ol ::marker {
   color: var(--dark-raspberry);
-  width: 1.2em;
-  text-align: center;
-  display: inline-block;
+  font-weight: bold;
+}
+
+/* Nutrition */
+
+.nutrition {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px 0;
+  padding-left: 0;
+  text-indent: 15px;
+}
+
+.nutrition_facts {
+  color: var(--dark-raspberry);
+  font-weight: bold;
+}
+
+.nutrition li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nutritional ul li {
+  padding-left: 0;
+}
+
+.nutrition li:not(:nth-last-child(-n + 2)) {
+  border-bottom: 2px solid var(--eggshell);
+}
+
+.nutrition_p_margin {
+  margin-bottom: 1rem;
 }
 
 /* Utility Classes */
@@ -213,5 +241,5 @@ span {
 }
 
 .top_border {
-  border-top: 1px solid var(--eggshell);
+  border-top: 2px solid var(--eggshell);
 }
