@@ -20,31 +20,33 @@
 
   <body>
     <div class="grid_container">
-      <div class="img_container">
+      <div role="img" class="img_container">
         <img src="images/image-omelette.jpeg" alt="Omelette image" />
       </div>
       <!-- This is another change on the webpage to test the commit -->
       <main class="grid_items">
-        <div>
-          <h1 class="dark_Charcoal | margin_bottom">Simple Omelette Recipe</h1>
+        <div class="omelette">
+          <h1 role="heading" class="dark_Charcoal | margin_bottom">
+            Simple Omelette Recipe
+          </h1>
 
-          <p>
+          <article role="article">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
-          </p>
+          </article>
         </div>
 
-        <div class="preperation_time grid_item">
+        <section role="listbox" class="preperation_time grid_item">
           <h3 class="dark_Raspberry">Preparation time</h3>
           <ul role="list">
             <li><span>Total:</span> Approximately 10 minutes</li>
             <li><span>Preparation:</span> 5 minutes</li>
             <li><span>Cooking:</span> 5 minutes</li>
           </ul>
-        </div>
+        </section>
 
-        <div class="grid_item border-bottom ingredients">
+        <div role="listitem" class="grid_item border-bottom ingredients">
           <h2 class="nutmeg | margin_bottom">Ingredients</h2>
           <ul role="list">
             <li>2-3 large eggs</li>
@@ -57,7 +59,7 @@
           </ul>
         </div>
 
-        <div class="custom_ol">
+        <section role="listboxd" class="custom_ol instructions">
           <h2 class="nutmeg | margin_bottom top_padding top_border">
             Instructions
           </h2>
@@ -96,9 +98,9 @@
               needed.
             </li>
           </ol>
-        </div>
+        </section>
 
-        <div class="nutritional">
+        <div role="listitem" class="nutritional">
           <h2 class="nutmeg | margin_bottom top_padding top_border">
             Nutrition
           </h2>
